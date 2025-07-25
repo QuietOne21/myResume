@@ -10,11 +10,10 @@
 
 
   <body>
-    <!-- CV Download Button -->
-   <a href="Dinale_Resume.pdf" class="cv-download" title="Download CV" download>
-    <i class="fas fa-download"></i>
-  </a>
-
+       <!-- CV Download Button -->
+    <a href="Dinale_Resume.pdf" class="cv-download" title="Download CV" download>
+        <i class="fas fa-download"></i>
+    </a>
 
     <!-- Navigation -->
     <nav class="nav">
@@ -30,7 +29,8 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="Dinale_Resume.pdf" class="nav-cv-download" download>
-                  <i class="fas fa-download"></i> CV </a></li>
+                    <i class="fas fa-download"></i> CV
+                </a></li>
             </ul>
             <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
         </div>
@@ -73,7 +73,12 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-grid">
             <div class="about-image">
-                <i class="fas fa-laptop-code"></i>
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                     alt="Kefitlhile Dinale" 
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="fallback-icon" style="display: none;">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
             </div>
             <div class="about-content">
                 <h3>Passionate Developer & Problem Solver</h3>
@@ -315,7 +320,6 @@
             </div>
         </div>
     </section>
-
     <footer class="footer">
       <p>&copy; 2025 Kefitlhile Dinale. All rights reserved.</p>
     </footer>
