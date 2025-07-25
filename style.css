@@ -83,7 +83,7 @@
         }
 
         .logo img {
-            max-height: 50px;
+            max-height: 10px;
             width: auto;
             object-fit: contain;
          }
