@@ -60,13 +60,6 @@
             align-items: center;
         }
 
-       .logo-video video {
-            width: 80px;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
-       }
-
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -128,19 +121,24 @@
         }
 
         .hero-avatar {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-            margin: 0 auto 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: white;
-            box-shadow: var(--shadow);
-            animation: float 6s ease-in-out infinite;
+              width: 150px;
+              height: 150px;
+              background: linear-gradient(135deg, #1e3a8a, #f59e0b); /* Optional */
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+              margin: 0 auto 1.5rem auto;
         }
+
+
+            .avatar-video {
+             width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
