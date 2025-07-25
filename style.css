@@ -305,6 +305,8 @@
             padding: 5rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .section-title {
