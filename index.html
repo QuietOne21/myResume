@@ -10,14 +10,17 @@
 
 
   <body>
-   <a href="Dinale_Resume.pdf" class="cv-download" title="Download CV" download>
-    <i class="fas fa-download"></i</a>
-     <!-- Navigation -->
+    <!-- CV Download Button -->
+    <a href="#" class="cv-download" title="Download CV" onclick="alert('CV download would work with actual PDF file')">
+        <i class="fas fa-download"></i>
+    </a>
+
+    <!-- Navigation -->
     <nav class="nav">
-      <div class="logo-video"> <video autoplay muted loop playsinline><source src="kd-logo.mp4" type="video/mp4" />
-        Your browser does not support the video tag. </video>
-      </div>
         <div class="nav-container">
+            <div class="logo-video">
+                <div style="width: 80px; height: 50px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">KD</div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,26 +28,24 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-               <li><a href="Dinale_Resume.pdf" class="nav-cv-download" download> 
-                 <i class="fas fa-download"></i> CV </a></li>
+                <li><a href="#" class="nav-cv-download" onclick="alert('CV download would work with actual PDF file')">
+                    <i class="fas fa-download"></i> CV
+                </a></li>
             </ul>
             <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
         </div>
     </nav>
 
-
-     <!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <video autoplay muted loop playsinline class="avatar-video">
-            <source src="kd-logo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-            </video>
+            <div class="hero-avatar">
+                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1e3a8a, #f59e0b); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: bold;">KD</div>
             </div>
             <h1>Kefitlhile Dinale</h1>
             <p class="hero-subtitle">
-                <span class="typing-text" data-text="Aspiring Software Developer,Full Stack Enthusiast,Problem Solver"></span>
+                <span class="typing-text" id="typing-text">Aspiring Software Developer</span>
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">
@@ -55,11 +56,11 @@
                     <i class="fas fa-eye"></i>
                     View My Work
                 </a>
-              <a href="https://github.com/QuietOne21" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/QuietOne21" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                     GitHub
                 </a>
-              <a href="https://www.linkedin.com/in/kefitlhile-dinale-274aa92ab/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/kefitlhile-dinale-274aa92ab/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin-in"></i>
                     LinkedIn
                 </a>
@@ -67,8 +68,7 @@
         </div>
     </section>
 
-
-     <!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="section">
         <h2 class="section-title">About Me</h2>
         <div class="about-grid">
@@ -87,22 +87,21 @@
                 </p>
                 <div class="stats">
                     <div class="stat">
-                        <div class="stat-number" data-count="7">0</div>
+                        <div class="stat-number" data-count="7">7</div>
                         <div class="stat-label">Programming Languages</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-number" data-count="2">2</div>
                         <div class="stat-label">Major Projects</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number" data-count="2025">2026</div>
+                        <div class="stat-number" data-count="2025">2025</div>
                         <div class="stat-label">Expected Graduation</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Skills Section -->
     <section id="skills" class="section">
@@ -210,8 +209,7 @@
         </div>
     </section>
 
-
-     <!-- Education Section -->
+    <!-- Education Section -->
     <section id="education" class="section">
         <h2 class="section-title">Education</h2>
         <div class="timeline">
@@ -230,8 +228,7 @@
         </div>
     </section>
 
-
-     <!-- Portfolio Section -->
+    <!-- Portfolio Section -->
     <section id="projects" class="section">
         <h2 class="section-title">Featured Projects</h2>
         <div class="portfolio-grid">
@@ -283,8 +280,7 @@
         </div>
     </section>
 
-
-     <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-grid">
@@ -319,5 +315,10 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Kefitlhile Dinale. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
