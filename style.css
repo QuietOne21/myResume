@@ -16,6 +16,14 @@
             --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
+         [data-theme="dark"] .nav-links a {
+                color: #3b82f6; 
+            }
+          [data-theme="dark"] .nav-links a:hover {
+                color: #60a5fa; 
+          }
+
+
         [data-theme="dark"] {
             --text-primary: #f9fafb;
             --text-secondary: #e5e7eb;
