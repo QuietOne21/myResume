@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kefitlhile Dinale - Software Developer Portfolio</title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  </head>
 
+
+  <body>
+     <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">KD</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+
+     <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <i class="fas fa-code"></i>
+            </div>
+            <h1>Kefitlhile Dinale</h1>
+            <p class="hero-subtitle">
+                <span class="typing-text" data-text="Aspiring Software Developer,Full Stack Enthusiast,Problem Solver"></span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-eye"></i>
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-image">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="about-content">
+                <h3>Passionate Developer & Problem Solver</h3>
+                <p class="about-text">
+                    Final-year Information Technology student with a strong foundation in programming, database management, 
+                    and software development methodologies. Proficient in Java, Python, C#, and SQL, with hands-on experience 
+                    gained through academic and personal projects. I'm passionate about building efficient, user-friendly 
+                    software that solves real-world problems. Currently focused on strengthening skills in object-oriented 
+                    programming, data structures, and full-stack development while eager to join collaborative development 
+                    teams to deliver innovative technical solutions.
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="7">0</div>
+                        <div class="stat-label">Programming Languages</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Major Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="2025">2020</div>
+                        <div class="stat-label">Expected Graduation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Java</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>C#</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>SQL</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML5 & CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>.NET Framework</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Git & Version Control</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Visual Studio</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Oracle Database</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 65%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2021 - 2025 (Expected)</div>
+                <h3 class="timeline-title">Bachelor of Science in Information Technology</h3>
+                <div class="timeline-company">North West University, South Africa</div>
+                <p>Comprehensive study in software development, database management, system analysis, and modern programming methodologies. Strong focus on practical application through project-based learning and industry-relevant coursework including object-oriented programming, data structures, and full-stack development.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2020</div>
+                <h3 class="timeline-title">Matriculation Certificate</h3>
+                <div class="timeline-company">Sunrise View Secondary School, North West</div>
+                <p>Completed secondary education with strong performance in Mathematics and Physical Sciences, providing a solid foundation for pursuing Information Technology studies and developing analytical problem-solving skills.</p>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Portfolio Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Ms Q Restaurant Reservation System</h3>
+                    <p class="portfolio-description">Developed a comprehensive reservation system allowing customers to RSVP, pre-order meals, and process payments. Streamlined user experience while managing bookings and orders efficiently.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET Framework</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Database Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Student Records Management System</h3>
+                    <p class="portfolio-description">Created a robust student management system for handling academic records, enrollment, grade tracking, and administrative functions with secure data management.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">JDBC</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Interactive Portfolio Website</h3>
+                    <p class="portfolio-description">Modern, responsive portfolio website showcasing projects and skills with innovative design elements, smooth animations, and cross-browser compatibility.</p>
+                    <div class="portfolio-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>dinalekefitlhile@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>067 797 6976</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
