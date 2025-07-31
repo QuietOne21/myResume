@@ -789,9 +789,13 @@
     }
 
     .theme-toggle {
-        display: block; 
-        order: 1;
-    }
+    display: block; 
+    order: 1;
+    position: relative;
+    z-index: 1002;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+}
 
     .logo-video {
         width: 60px;
@@ -925,11 +929,14 @@
     }
 
     .cv-download {
-        right: 10px;
-        width: 50px;
-        height: 50px;
-        font-size: 1rem;
-    }
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 0.9rem;
+    bottom: 20px;
+    top: auto;
+    transform: none;
+}
 
     .contact-item {
         flex-direction: column;
