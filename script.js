@@ -56,6 +56,35 @@
             });
         });
 
+function toggleMobileMenu() {
+    const navLinks = document.getElementById('nav-links');
+    const menuIcon = document.getElementById('menu-icon');
+    
+    navLinks.classList.toggle('active');
+    
+    if (navLinks.classList.contains('active')) {
+        menuIcon.classList.remove('fa-bars');
+        menuIcon.classList.add('fa-times');
+        document.body.style.overflow = 'hidden';
+    } else {
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.getElementById('nav-links');
+        const menuIcon = document.getElementById('menu-icon');
+        
+        navLinks.classList.remove('active');
+        menuIcon.classList.remove('fa-times');
+        menuIcon.classList.add('fa-bars');
+        document.body.style.overflow = 'auto'; /* ADDED - restores scrolling */
+    });
+});
+
         // Scroll Animations
         const observerOptions = {
             threshold: 0.1,
